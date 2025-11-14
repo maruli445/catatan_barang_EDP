@@ -1,0 +1,261 @@
+.user-info {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.user-info i {
+  margin-right: 8px;
+}
+
+.upload-area {
+  border: 2px dashed #dee2e6;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  border-color: #0d6efd;
+  background-color: #e9ecef;
+}
+
+.image-preview {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.serial-input-group {
+  transition: all 0.3s ease;
+}
+
+.file-info {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+/* Style untuk drag over state */
+.upload-area.dragover {
+  border-color: #0d6efd;
+  background-color: #e9ecef;
+}
+
+/* Container */
+.wide-container {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Tabel */
+.table th,
+.table td {
+  white-space: nowrap;
+  padding: 8px 12px;
+}
+
+.table thead th {
+  background-color: #343a40;
+  color: white;
+  font-weight: 600;
+}
+
+/* Responsif tabel */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Button group */
+.btn-group .btn {
+  margin: 2px;
+}
+
+/* Modal */
+.modal-dialog {
+  max-width: 500px;
+}
+
+/* Image Preview */
+.image-preview {
+  max-width: 200px;
+  max-height: 200px;
+  display: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Upload Area */
+.upload-area {
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  border-color: #0d6efd;
+  background-color: #e9ecef;
+}
+
+.upload-area.dragover {
+  border-color: #007bff;
+  background-color: #e7f3ff;
+}
+
+/* Preview Container */
+.preview-container {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Content */
+.main-content {
+  transition: all 0.3s ease;
+  margin-left: 250px;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+}
+
+/* Sidebar Overlay */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+  display: none;
+}
+
+.sidebar-overlay.mobile-open {
+  display: block;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1060;
+  background: #343a40;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: #495057;
+  transform: scale(1.05);
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background: #343a40;
+  z-index: 1050;
+  transition: all 0.3s ease;
+  transform: translateX(0);
+  overflow-y: auto;
+}
+
+.sidebar.collapsed {
+  transform: translateX(-100%);
+}
+
+/* File Info Text */
+.file-info {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+/* Serial Input Group & Remove Button */
+.serial-input-group {
+  margin-bottom: 10px;
+}
+
+.remove-serial {
+  cursor: pointer;
+  color: #dc3545;
+}
+
+.remove-serial:hover {
+  color: #b02a37;
+}
+.serial-input-group {
+  margin-bottom: 10px;
+}
+
+.remove-serial {
+  cursor: pointer;
+}
+
+.upload-area {
+  border: 2px dashed #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  border-color: #007bff;
+  background-color: #f8f9fa;
+}
+
+.image-preview {
+  max-width: 200px;
+  max-height: 200px;
+  display: none;
+}
+
+.file-info {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+.foto-preview {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.foto-container {
+  border: 2px dashed #dee2e6;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
